@@ -31,34 +31,6 @@ To identify key factors that contribute to patient no-shows in hospital appointm
 - Imported the cleaned dataset into MySQL
 - Performed basic to intermediate SQL analysis:
 
-```sql
--- Average lead time by no-show status
-SELECT 
-  no_show_status,
-  ROUND(AVG(lead_time), 2) AS avg_lead_days
-FROM hospital_appointments
-GROUP BY no_show_status;
-
--- No-show rate by SMS received
-SELECT 
-    sms_received,
-    COUNT(*) AS total_appointments,
-    SUM(CASE WHEN no_show_status = 'Yes' THEN 1 ELSE 0 END) AS no_shows,
-    ROUND(SUM(CASE WHEN no_show_status = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS no_show_rate
-FROM hospital_appointments
-GROUP BY sms_received;
-
--- No-show rate by age group and gender
-SELECT 
-    age_group,
-    gender,
-    COUNT(*) AS total_appointments,
-    SUM(CASE WHEN no_show_status = 'Yes' THEN 1 ELSE 0 END) AS no_shows,
-    ROUND(SUM(CASE WHEN no_show_status = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS no_show_rate
-FROM hospital_appointments
-GROUP BY age_group, gender;
-```
-
 > Note: We used a flat table without normalization for simplicity.
 
 ### 3. 🔹 **Power BI**
