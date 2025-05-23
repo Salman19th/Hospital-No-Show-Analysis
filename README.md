@@ -47,8 +47,6 @@ To identify key factors that contribute to patient no-shows in hospital appointm
 
 The final dashboard (`hospital no show dashboard.pbix`) is included in the `powerbi/` folder.
 
-> ⚠️ GitHub does not support previewing `.pbix` files in-browser. Please [download the file](powerbi/hospital_no_show_dashboard.pbix) and open it using Power BI Desktop.
-
 ### 🔎 Drill-Through Feature
 
 This dashboard includes a drill-through functionality:
@@ -63,11 +61,11 @@ This dashboard includes a drill-through functionality:
 
 **Main Dashboard (click to drill through):**
 
-![Main Dashboard](assets/hospital_dashboard_main.png)
+![Main Dashboard](assets/main_dashboard.png)
 
 **Drill-Through Page:**
 
-![Drill-Through Page](assets/hospital_dashboard_drillthrough.png)
+![Drill-Through Page](assets/drillthrough_page.png)
 
 
 ## 📊 Key Insights
