@@ -91,19 +91,14 @@ Hospital-NoShow-Analysis/
 │
 ├── powerbi/
 │   └── Hospital_NoShow_Dashboard.pbix
+|
+├── assets/
+|   └── main_dashboard.png
+|   └── drillthrough_page.png
 │
 ├── README.md
 ```
 
----
-
-## 🚀 How to Run
-1. Clone the repo
-2. Run the Jupyter notebook from `notebooks/`
-3. Load the CSV into MySQL (optional)
-4. Open `.pbix` file in Power BI Desktop
-
----
 
 ## 📫 Contact
 
